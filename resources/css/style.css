@@ -36,3 +36,20 @@ div {
         display: none;
     }
 }
+
+/* Jumbotron */
+
+.jumbotron-banner {
+    width: 60%;
+}
+
+@media only screen and (max-width:480px) {
+    .jumbotron-banner {
+        width: 100%;
+    }
+    
+    .jumbotron {
+        display: inline;
+        flex-direction: column;
+    }
+}
