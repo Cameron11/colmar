@@ -1,3 +1,38 @@
-h1 {
-    color: red;
+/* Unversal */
+
+div {
+    border: 1px solid black;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* header */
+
+.header-logo {
+    align-self: flex-start;
+}
+
+.header-nav {
+    align-self: flex-end;
+}
+
+.header-mobile {
+    width: 100%;
+}
+
+@media only screen and (min-width:480px) {
+    .header-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .header-logo, .header-nav {
+        display: none;
+    }
 }
